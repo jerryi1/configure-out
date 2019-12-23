@@ -1,0 +1,41 @@
+#����˿ں�
+server:
+  port: 8888
+
+user:
+  name: 'lhq'
+  age: 18
+  hobbit: 'plat computer games'
+#配置随机值
+my:
+  secret: ${random.value}
+  number:
+    in:
+      range: ${random.int[1,10]}
+    less:
+      than:
+        ten: ${random.int(10)}
+  bignumber: ${random.long}
+  uuid: ${random.uuid}
+
+
+environments:
+  enable: true
+  dev:
+    url: http://dev.example.com
+    name: Developer Setup
+  prod:
+    url: http://another.example.com
+    name: My Cool App
+  server:
+    - 'aaaaaa'
+    - 'bbbbbb'
+    - 'cccccc'
+  first-name: 'li'
+  second_name: 'lihuaqng'
+  thirdName: 'ms.Li'
+  innerClass:
+    inner1: 'inner1'
+    inner2: 'inner2'
+    inner3: 'inner3'
+    inner4: 'inner4'
